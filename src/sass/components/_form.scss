@@ -1,0 +1,32 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.contact {
+	&__form {
+		display: flex;
+		flex-direction: column;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+}
+
+.title {
+	&__contact,
+	&__map {
+		margin-top: 40px;
+		text-align: center;
+		font-size: 2.4em;
+		font-weight: $normal;
+	}
+}
+
+label {
+	margin: 10px 0 5px;
+}
+
+input,
+textarea {
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}

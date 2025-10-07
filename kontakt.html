@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt - Forest Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/dist/css/styles.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <button class="menu__toggle">
+        <img src="/dist/img/hamburger.svg" alt="Menu hamburgerowe">
+        <!-- Zakładam, że plik SVG jest dostępny pod tą ścieżką -->
+      </button>
+      <div class="header__logo">
+        <a href="/index.html"><img src="/dist/img/tree2.svg" alt="ikonka drzewka" class="header__logo--icon">
+          <span class="header__logo--text">Forest</span></a> .
+      </div>
+      <div class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/index.html" class="nav__item--link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__item--link">O nas</a></li>
+          <li class="nav__item"><a href="/oferta.html" class="nav__item--link">Oferta</a></li>
+          <li class="nav__item"><a href="/kontakt.html" class="nav__item--link">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="contact">
+    <div class="container">
+      <h2 class="title__contact">Kontakt</h2>
+      <form class="contact__form">
+        <label for="name">Imię: &#128100;</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email: &#9993;</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Wiadomość: &#9999;</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="submit" class="btn__btn-primary">Wyślij</button>
+      </form>
+      <h2 class="title__map">Znajdziesz nas tutaj</h2>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.898233927737!2d19.890269276675443!3d50.08819217152526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sMcDonald&#39;s!5e0!3m2!1spl!2spl!4v1759379414912!5m2!1spl!2spl"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo">
+        <span><img src="/dist/img/tree2.svg" alt="ikonka drzewka" class='footer__icon'></span>
+        <span class="footer__text">Forest</span>
+      </div>
+      <div class="footer__columns">
+        <ul>
+          <li>
+            <h3><a href="#about">O nas</a></h3>
+          </li>
+          <li class="footer__subtitle">Historia</li>
+          <li class="footer__subtitle">Parki</li>
+          <li class="footer__subtitle">Opinie</li>
+        </ul>
+        <ul>
+          <h3>
+            <li>Nasza firma</li>
+          </h3>
+          <li class="footer__subtitle">Praca</li>
+          <li class="footer__subtitle">Kadry</li>
+          <li class="footer__subtitle">Zarząd</li>
+        </ul>
+        <ul>
+          <h3>
+            <li>Dokumenty</li>
+          </h3>
+          <li class="footer__subtitle">Wnioski</li>
+          <li class="footer__subtitle">Rezerwacje</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__line"></div>
+    <p class="footer__copyright">©2025 Forest Group Company Ltd.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

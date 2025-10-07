@@ -1,0 +1,141 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+@media (min-width: $breakpoint-xl) {
+	.menu__toggle {
+		display: none;
+	}
+	.nav__list {
+		display: flex;
+	}
+}
+@media (max-width: $breakpoint-xl) {
+	img {
+		height: auto;
+	}
+	.container {
+		margin-bottom: 40px;
+	}
+	.nav {
+		display: none;
+	}
+	.menu__toggle {
+		display: block;
+	}
+	.hero__content {
+		text-align: center;
+		margin-left: 12%;
+	}
+	// .about__container {
+	// 	position: relative;
+	// }
+	// .about__title {
+	// 	text-align: center;
+	// }
+	// .about__text {
+	// 	margin-left: 60px;
+	// }
+	// .about__image {
+	// 	position: absolute;
+	// }
+	.offer__cards {
+		margin: 0 20px;
+		padding-bottom: 0;
+		max-width: 100%;
+	}
+	.footer__logo {
+		left: 0;
+		top: 0;
+		align-self: center;
+	}
+	.footer__columns {
+		flex-direction: column;
+		align-items: center;
+		bottom: 0;
+		left: 0;
+		margin: 0;
+	}
+	.footer__text {
+		text-align: center;
+	}
+}
+
+@media (max-width: 1095px) {
+	.offer__cards {
+		flex-direction: column;
+		align-items: center;
+		margin: 0 20px;
+	}
+
+	.card {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: $breakpoint-lg) {
+	.about {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.about__grid {
+		position: relative;
+		// display: block;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.about__content {
+		margin-right: 0;
+		top: 200px;
+	}
+	.about__image {
+		position: relative;
+		width: 100%;
+		left: 50%;
+	}
+}
+
+@media (max-width: $breakpoint-md) {
+	.hero {
+		h2,
+		p {
+			text-align: center;
+			font-size: 1.4em;
+		}
+	}
+	.about__grid {
+		grid-template-columns: 1fr;
+	}
+}
+.about__container {
+	display: flex;
+	flex-direction: column; /* Ustawienie elementów w kolumnie /
+align-items: center; / Wyśrodkowanie w poziomie /
+text-align: center; / Wyśrodkowanie tekstu /
+max-width: 100%; / Opcjonalnie ograniczenie szerokości /
+margin: 20px auto; / Wyśrodkowanie kontenera na stronie */
+}
+
+.icon__minus {
+	position: relative;
+	height: auto;
+	width: 18px;
+	left: -13px;
+}
+
+@media (max-width: $breakpoint-sm) {
+	.hero {
+		h2 {
+			font-size: 1.2em;
+		}
+		p {
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	span,
+	.icon__minus {
+		text-align: center;
+	}
+}

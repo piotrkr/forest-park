@@ -1,0 +1,21 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $font-stack;
+	background: $secondary-color;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+	padding: 0 20px;
+}

@@ -1,0 +1,56 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.section__title {
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 2.4em;
+	font-weight: $normal;
+}
+
+.offer {
+	padding: 60px 0;
+
+	&__title {
+		margin-top: 40px;
+		text-align: center;
+		font-size: 2.4em;
+		font-weight: $normal;
+	}
+
+	&__subtitle {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	&__cards {
+		display: flex;
+		justify-content: space-around;
+		margin: 0px 140px;
+	}
+}
+
+.icon {
+	&__check {
+		position: relative;
+		height: auto;
+		width: 18px;
+		top: 5px;
+		right: 10px;
+	}
+
+	&__minus {
+		position: relative;
+		height: auto;
+		width: 18px;
+		top: 5px;
+		left: 5px;
+	}
+}
+
+span {
+	position: relative;
+	left: 15px;
+	color: $minus-color;
+	text-decoration: none;
+}

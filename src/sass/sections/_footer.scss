@@ -1,0 +1,71 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.footer {
+	width: 100%;
+	padding: 20px 0;
+	background: #f8f8f8;
+
+	&__logo {
+		position: relative;
+		top: 40px;
+		left: 12%;
+	}
+
+	&__icon {
+		height: auto;
+		width: 42px;
+	}
+
+	&__text {
+		font-size: 3em;
+		color: $primary-color;
+	}
+
+	&__columns {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		width: 40%;
+		bottom: 20px;
+		left: 190px;
+		margin: 0 400px;
+		cursor: pointer;
+
+		h3 {
+			font-size: 1.2em;
+		}
+		ul {
+			position: relative;
+			list-style: none;
+
+			li {
+				margin-bottom: 20px;
+
+				a {
+					text-decoration: none;
+					color: $primary-color;
+				}
+			}
+		}
+	}
+
+	&__subtitle {
+		font-size: 0.8em;
+	}
+
+	&__line {
+		width: 100%;
+		background: #000;
+		margin: 0;
+	}
+
+	&__copyright {
+		text-align: center;
+		top: 10px;
+		max-width: 100%;
+		padding: 20px;
+		font-size: 0.8em;
+		border-top: 1px solid #000;
+	}
+}

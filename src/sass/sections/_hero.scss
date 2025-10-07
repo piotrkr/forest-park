@@ -1,0 +1,50 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.hero {
+	position: relative; /* Kontener relatywny dla pozycjonowania dzieci */
+	width: 100%; /* Pełna szerokość */
+	height: 40vh; /* Przykładowa wysokość – dostosuj, np. 100vh dla pełnego ekranu; użyj vh dla responsywności */
+	overflow: hidden; /* Ukryj nadmiar, jeśli obraz jest za duży */
+
+	&__image {
+		position: absolute; /* Pokrywa całą sekcję */
+		top: 0;
+		left: 0;
+		width: 100%; /* Skaluje się z sekcją */
+		height: 100%; /* Skaluje się z sekcją */
+		object-fit: cover; /* Dopasowuje obraz bez zniekształceń, zachowując proporcje */
+		filter: brightness(30%); /* Przykładowy filtr z twojego screenshotu – dostosuj dla kontrastu tekstu */
+		z-index: 1; /* Obraz pod tekstem */
+	}
+
+	&__content {
+		position: absolute; /* Wyśrodkowanie względem .hero */
+		top: 50%; /* Środek pionowo */
+		left: 36%; /* Środek poziomo */
+		transform: translate(-50%, -50%); /* Dokładne centrowanie, niezależnie od rozmiaru treści */
+		z-index: 2; /* Tekst nad obrazem */
+		color: white; /* Biały kolor dla kontrastu na ciemnym obrazie – dostosuj */
+		width: 80%; /* Ogranicz szerokość dla lepszego wrapowania tekstu na małych ekranach */
+		max-width: 800px; /* Maksymalna szerokość dla dużych ekranów */
+	}
+
+	&__title {
+		font-size: 1.5rem;
+		font-weight: $normal;
+	}
+
+	&__subtitle {
+		margin: 0; /* Usuń domyślne marginesy h2 */
+		padding: 0;
+		// text-align: center; /* Wyśrodkuj tekst wewnątrz diva */
+		font-size: 2rem;
+	}
+
+	&__title,
+	&__subtitle {
+		position: relative;
+		line-height: 1.2;
+		left: 15%;
+	}
+}
